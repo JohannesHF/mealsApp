@@ -1,4 +1,4 @@
-# Meals App
+# Assignment 2 - Meals App
 
 This app is designed to make it as easy as possible for users to get inspiration for recipes.
 Here the user has the possibility to search for recipes in different categories.
