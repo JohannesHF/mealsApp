@@ -17,6 +17,6 @@ The user can rename a meal.
 4. the user confirms his change
 
 ### Documentation
-External documents for the documentation of assignment 1
+External documents for the documentation of assignment 2
 
 **Class diagram** [Learning from the other person related to the assignment and their style of working.pdf](documentation%2FLearning%20from%20the%20other%20person%20related%20to%20the%20assignment%20and%20their%20style%20of%20working.pdf)
