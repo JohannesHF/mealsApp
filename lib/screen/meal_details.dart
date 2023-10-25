@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:meals_app/providers/favorites_provider.dart';
+import 'package:meals_app/widgets/editable_meal_tittle.dart';
 
 import '../model/meal.dart';
 
@@ -14,7 +15,7 @@ class MealDetailsScreen extends ConsumerWidget {
     final isFavorite = ref.watch(favoriteMealsProvider).contains(meal);
     return Scaffold(
       appBar: AppBar(
-        title: Text(meal.title),
+        title: EditableMealTitle(mealId: meal.id,),
         actions: [
           IconButton(
             onPressed: () {

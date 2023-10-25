@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:meals_app/providers/meals_provider.dart';
 import 'package:meals_app/widgets/meal_item_trait.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../model/meal.dart';
 
-class MealItem extends StatelessWidget {
+class MealItem extends ConsumerWidget {
   const MealItem({super.key, required this.meal, required this.onSelect});
 
   final Meal meal;
@@ -18,7 +20,8 @@ class MealItem extends StatelessWidget {
       meal.affordability.name.substring(1);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(mealsProvider);
     return InkWell(
       splashColor: Colors.orange,
       onTap: () {
